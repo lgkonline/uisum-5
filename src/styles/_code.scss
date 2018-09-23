@@ -1,0 +1,19 @@
+pre,
+code,
+kbd,
+samp {
+    font-family: var(--font-family-monospace);
+    font-size: 1em;
+}
+
+code {
+    color: var(--code-color);
+}
+
+kbd {
+    background-color: var(--kbd-bg);
+    color: var(--kbd-color);
+    border-radius: var(--control-border-radius);
+    padding: var(--kbd-padding-y) var(--kbd-padding-x);
+    font-size: var(--kbd-font-size);
+}

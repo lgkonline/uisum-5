@@ -1,0 +1,14 @@
+.Container {
+    padding: 0 calc(50% - 38rem);
+    margin: 0 1rem;
+}
+
+.Container.fluid {
+    padding: 1rem;
+}
+
+.Container::before,
+.Container::after {
+    content: "";
+    display: table;
+}

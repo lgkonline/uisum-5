@@ -1,0 +1,27 @@
+.Btn.primary {
+    --bg-normal: var(--primary);
+    --bg-hover: var(--primary-stronger);
+}
+
+.Btn {
+    --bg-normal: var(--btn-bg);
+    --bg-hover: var(--btn-bg-stronger);
+    --bg-active: var(--secondary-stronger);
+
+    --bg: var(--bg-normal);
+
+    border: 1px solid var(--bg);
+    display: inline-block;
+    text-decoration: none;
+    background-color: var(--bg);
+    color: white;
+    padding: var(--btn-padding);
+    border-radius: var(--btn-border-radius);
+    transition: background-color .2s;
+}
+.Btn:hover {
+    --bg: var(--bg-hover);
+}
+.Btn:active {
+    --bg: var(--bg-active);
+}

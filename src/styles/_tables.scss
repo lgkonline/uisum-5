@@ -1,0 +1,18 @@
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: var(--control-bg);
+    color: var(--control-color);
+
+    th {
+        text-align: left;
+        border-top: 1px solid var(--control-border-color);
+        border-bottom: 2px solid var(--control-border-color);
+        padding: var(--control-padding);
+    }
+
+    td {
+        border-bottom: 1px solid var(--control-border-color);
+        padding: var(--control-padding);
+    }
+}

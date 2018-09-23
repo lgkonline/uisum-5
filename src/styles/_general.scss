@@ -1,0 +1,47 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+html {
+    font-size: #{var(--font-size-base)};
+}
+
+body {
+    margin: 0;
+    font-family: var(--font-family-base);
+    background-color: var(--body-bg);
+    color: var(--body-color);
+}
+
+input,
+textarea,
+button {
+    font: inherit;
+    color: inherit;
+}
+
+a {
+    color: var(--link-color);
+    transition: color .2s;
+}
+
+a:hover {
+    color: var(--link-hover);
+}
+
+a:visited {
+    color: var(--link-visited);
+}
+
+a:visited:hover {
+    color: var(--link-visited-hover);
+}
+
+a:active {
+    color: var(--link-active);
+}

@@ -1,0 +1,55 @@
+:root {
+    --font-size-base: 1rem;
+    --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    --font-family-base: var(--font-family-sans-serif);
+
+    --white: white;
+
+    --gray-100: #f8f9fa;
+    --gray-200: #e9ecef;
+    --gray-300: #dee2e6;
+    --gray-400: #ced4da;
+    --gray-500: #adb5bd;
+    --gray-600: #6c757d;
+    --gray-700: #495057;
+    --gray-800: #343a40;
+    --gray-900: #212529;
+
+    --primary: #8ea6d0;
+    --primary-stronger: #6a8ac1;
+    --secondary: #d6aaa9;
+    --secondary-stronger: #c68886;
+
+    --body-bg: var(--white);
+    --body-color: var(--gray-900);
+
+    --control-padding-x: .7rem;
+    --control-padding-y: .5rem;
+    --control-padding: var(--control-padding-y) var(--control-padding-x);
+    --control-border-color: var(--gray-400);
+    --control-border-color-lighter: var(--gray-300);
+    --control-border-color-stronger: var(--gray-500);
+    --control-border-radius: 3px;
+    --control-bg: var(--body-bg);
+    --control-color: var(--body-color);
+
+    --btn-bg: var(--gray-500);
+    --btn-bg-stronger: var(--gray-600);
+    --btn-padding: var(--control-padding);
+    --btn-border-radius: var(--control-border-radius);
+
+    --link-color: var(--primary);
+    --link-hover: var(--primary-stronger);
+    --link-active: var(--secondary-stronger);
+    --link-visited: var(--secondary);
+    --link-visited-hover: var(--secondary-stronger);
+
+    --code-color: #f06;
+
+    --kbd-bg: var(--gray-600);
+    --kbd-color: var(--white);
+    --kbd-padding-x: .4em;
+    --kbd-padding-y: .2em;
+    --kbd-font-size: calc(1em - var(--kbd-padding-y));
+}

@@ -1,0 +1,11 @@
+input {
+    padding: var(--control-padding);
+    background-color: var(--control-bg);
+    color: var(--control-color);
+    border: 1px solid var(--control-border-color);
+    border-radius: var(--control-border-radius);
+
+    &:hover, &:focus {
+        border-color: var(--control-border-color-stronger);
+    }
+}

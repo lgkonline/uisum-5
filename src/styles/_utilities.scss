@@ -1,0 +1,6 @@
+/* Can be added to a header element (like `h1`) and can mark a new section of an article. */
+.page-header {
+    margin: 2rem 0 1rem;
+    padding-bottom: .5rem;
+    border-bottom: 1px solid var(--control-border-color-lighter);
+}
