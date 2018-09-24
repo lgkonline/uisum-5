@@ -1,5 +1,5 @@
 {
-  "src/components/Btn/Btn.js": {
+  "src\\components\\Btn\\Btn.js": {
     "description": "Button as you might know it from Bootstrap.",
     "displayName": "Btn",
     "methods": [],
@@ -46,7 +46,7 @@
       }
     }
   },
-  "src/components/Col/Col.js": {
+  "src\\components\\Col\\Col.js": {
     "description": "",
     "displayName": "Col",
     "methods": [],
@@ -74,7 +74,7 @@
       }
     }
   },
-  "src/components/Container/Container.js": {
+  "src\\components\\Container\\Container.js": {
     "description": "",
     "displayName": "Container",
     "methods": [],
@@ -99,7 +99,63 @@
       }
     }
   },
-  "src/components/Row/Row.js": {
+  "src\\components\\Page\\Page.js": {
+    "description": "",
+    "displayName": "Page",
+    "methods": [],
+    "props": {
+      "children": {
+        "flowType": {
+          "name": "any"
+        },
+        "required": false,
+        "description": ""
+      },
+      "routeName": {
+        "flowType": {
+          "name": "string"
+        },
+        "required": true,
+        "description": ""
+      }
+    }
+  },
+  "src\\components\\Root\\Root.js": {
+    "description": "This component is the backbone of your application.",
+    "displayName": "Root",
+    "methods": [
+      {
+        "name": "initMatch",
+        "docblock": null,
+        "modifiers": [],
+        "params": [],
+        "returns": null
+      }
+    ],
+    "props": {
+      "children": {
+        "flowType": {
+          "name": "any"
+        },
+        "required": false,
+        "description": ""
+      },
+      "routes": {
+        "flowType": {
+          "name": "Array",
+          "elements": [
+            {
+              "name": "any"
+            }
+          ],
+          "raw": "Array<any>"
+        },
+        "required": false,
+        "description": ""
+      }
+    }
+  },
+  "src\\components\\Row\\Row.js": {
     "description": "",
     "displayName": "Row",
     "methods": [],

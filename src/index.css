@@ -1,4 +1,5 @@
 :root {
+  --spacer: 1rem;
   --font-size-base: 1rem;
   --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
@@ -29,6 +30,7 @@
   --control-bg: var(--body-bg);
   --control-color: var(--body-color);
   --btn-bg: var(--gray-500);
+  --btn-color: var(--white);
   --btn-bg-stronger: var(--gray-600);
   --btn-padding: var(--control-padding);
   --btn-border-radius: var(--control-border-radius);
@@ -42,7 +44,12 @@
   --kbd-color: var(--white);
   --kbd-padding-x: .4em;
   --kbd-padding-y: .2em;
-  --kbd-font-size: calc(1em - var(--kbd-padding-y)); }
+  --kbd-font-size: calc(1em - var(--kbd-padding-y));
+  --headings-margin-bottom: calc(var(--spacer) * .5);
+  --headings-font-family: inherit;
+  --headings-font-weight: 300;
+  --headings-line-height: 1.2;
+  --headings-color: inherit; }
 
 * {
   box-sizing: border-box; }
@@ -127,6 +134,25 @@ input {
   border-radius: var(--control-border-radius); }
   input:hover, input:focus {
     border-color: var(--control-border-color-stronger); }
+
+button {
+  border: 1px solid var(--control-border-color);
+  border-radius: var(--control-border-radius);
+  padding: var(--control-padding);
+  background-color: var(--control-border-color);
+  color: var(--control-color); }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: var(--headings-margin-bottom);
+  font-family: var(--headings-font-family);
+  font-weight: var(--headings-font-weight);
+  line-height: var(--headings-line-height);
+  color: var(--headings-color); }
 
 /*!
  * Bootstrap Grid v4.1.3 (https://getbootstrap.com/)
@@ -1245,4 +1271,5 @@ html {
 
 :root {
   --control-padding-x: 1rem;
-  --control-padding-y: .7rem; }
+  --control-padding-y: .7rem;
+  --font-size-base: 16px; }

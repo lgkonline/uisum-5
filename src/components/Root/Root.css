@@ -1,0 +1,3 @@
+.Root-route:not(.active) {
+    display: none;
+}
