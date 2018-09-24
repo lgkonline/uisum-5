@@ -1,6 +1,19 @@
+.App {
+    --header-height: 150px;
+    padding-top: 150px;
+    padding-top: var(--header-height);
+    position: relative;
+}
+
 .App-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+
     background-color: #ff3624;
     height: 150px;
+    height: var(--header-height);
     padding: 20px;
     color: white;
     font-size: 1.5rem;

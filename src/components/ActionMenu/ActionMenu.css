@@ -1,0 +1,45 @@
+.ActionMenu {
+    position: absolute;
+    background-color: var(--ActionMenu-bg);
+    border-radius: var(--control-border-radius);
+}
+
+.ActionMenu.right {
+    right: var(--spacer);
+}
+
+.ActionMenu.right .ActionMenu-toggle {
+    text-align: right;
+}
+
+.ActionMenu.in {
+    background-color:  var(--ActionMenu-bg-in);
+}
+
+.ActionMenu:not(.in) .MenuItem {
+    display: none;
+}
+
+.ActionMenu:not(.in) .MenuItem.ActionMenu-toggle {
+    display: inherit;
+}
+
+@media screen and (min-width: 768px) {
+    .ActionMenu:not(.in) {
+        display: flex;
+        position: absolute;
+    }
+
+    .ActionMenu:not(.in) .MenuItem.ActionMenu-toggle {
+        display: none;
+    }
+    
+    .ActionMenu:not(.toggleable) .MenuItem:not(.ActionMenu-toggle) {
+        display: inherit;
+    }
+}
+
+.ActionMenu-wrapper.in {
+    position: fixed;
+    top: 0; right: 0; bottom: 0; left: 0;
+}

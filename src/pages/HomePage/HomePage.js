@@ -74,7 +74,8 @@ class HomePage extends React.Component<Props> {
                                         root.style.setProperty("--control-border-color-stronger", "var(--gray-500)");
                                         root.style.setProperty("--control-bg", "var(--gray-800)");
 
-                                        root.style.setProperty("--btn-bg-stronger", "var(--gray-400)");
+                                        root.style.setProperty("--Btn-color", "var(--gray-900)");
+                                        root.style.setProperty("--Btn-bg-stronger", "var(--gray-400)");
                                     }
                                 }}
                             >

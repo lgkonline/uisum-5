@@ -11,12 +11,12 @@ type Props = {
     routeName: string
 };
 
-class SecondPage extends React.Component<Props> {
+class DocumentationPage extends React.Component<Props> {
     render() {
         return (
             <Page {...this.props}>
                 <Container>
-                    <h1 className="page-header">Second page! <a href="#/home">Back</a></h1>
+                    <h1 className="page-header">Documentation</h1>
 
                     <Documentation />
                 </Container>
@@ -25,4 +25,4 @@ class SecondPage extends React.Component<Props> {
     }
 }
 
-export default SecondPage;
+export default DocumentationPage;

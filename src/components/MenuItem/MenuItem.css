@@ -1,0 +1,23 @@
+.MenuItem {
+    text-decoration: none;
+    display: block;
+    font-size: var(--font-size-base);
+    background-color: var(--MenuItem-bg);
+    color: var(--MenuItem-color);
+    padding: var(--control-padding);
+    border-radius: var(--control-border-radius);
+}
+
+.MenuItem:hover,
+.MenuItem:visited,
+.MenuItem:visited:hover {
+    color: inherit;
+}
+
+.MenuItem:hover {
+    background-color: var(--MenuItem-bg-stronger);
+}
+
+.MenuItem.active {
+    background-color: var(--MenuItem-bg-stronger);
+}

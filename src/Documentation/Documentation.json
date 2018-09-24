@@ -1,4 +1,25 @@
 {
+  "src\\components\\ActionMenu\\ActionMenu.js": {
+    "description": "",
+    "displayName": "ActionMenu",
+    "methods": [],
+    "props": {
+      "children": {
+        "flowType": {
+          "name": "any"
+        },
+        "required": false,
+        "description": ""
+      },
+      "right": {
+        "flowType": {
+          "name": "boolean"
+        },
+        "required": false,
+        "description": "Will align the menu on the right side."
+      }
+    }
+  },
   "src\\components\\Btn\\Btn.js": {
     "description": "Button as you might know it from Bootstrap.",
     "displayName": "Btn",
@@ -99,6 +120,60 @@
       }
     }
   },
+  "src\\components\\MenuItem\\MenuItem.js": {
+    "description": "",
+    "displayName": "MenuItem",
+    "methods": [],
+    "props": {
+      "active": {
+        "flowType": {
+          "name": "boolean"
+        },
+        "required": false,
+        "description": ""
+      },
+      "children": {
+        "flowType": {
+          "name": "any"
+        },
+        "required": false,
+        "description": ""
+      },
+      "className": {
+        "flowType": {
+          "name": "string"
+        },
+        "required": false,
+        "description": ""
+      },
+      "href": {
+        "flowType": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "",
+        "defaultValue": {
+          "value": "\"javascript:void(0)\"",
+          "computed": false
+        }
+      },
+      "onClick": {
+        "flowType": {
+          "name": "signature",
+          "type": "function",
+          "raw": "() => void",
+          "signature": {
+            "arguments": [],
+            "return": {
+              "name": "void"
+            }
+          }
+        },
+        "required": false,
+        "description": ""
+      }
+    }
+  },
   "src\\components\\Page\\Page.js": {
     "description": "",
     "displayName": "Page",
@@ -136,6 +211,13 @@
       "children": {
         "flowType": {
           "name": "any"
+        },
+        "required": false,
+        "description": ""
+      },
+      "className": {
+        "flowType": {
+          "name": "string"
         },
         "required": false,
         "description": ""

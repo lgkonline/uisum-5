@@ -12,8 +12,6 @@ class Documentation extends React.Component<Props> {
     render() {
         return (
             <div>
-                <h1>Documentation</h1>
-
                 {Object.keys(data).map((componentName, key) => {
                     const comp = data[componentName];
                     return (

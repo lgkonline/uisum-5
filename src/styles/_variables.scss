@@ -36,12 +36,6 @@
     --control-bg: var(--body-bg);
     --control-color: var(--body-color);
 
-    --btn-bg: var(--gray-500);
-    --btn-color: var(--white);
-    --btn-bg-stronger: var(--gray-600);
-    --btn-padding: var(--control-padding);
-    --btn-border-radius: var(--control-border-radius);
-
     --link-color: var(--primary);
     --link-hover: var(--primary-stronger);
     --link-active: var(--secondary-stronger);
@@ -61,4 +55,17 @@
     --headings-font-weight: 300;
     --headings-line-height: 1.2;
     --headings-color: inherit;
+
+    --ActionMenu-bg: transparent;
+    --ActionMenu-bg-in: var(--gray-900);
+
+    --Btn-bg: var(--gray-500);
+    --Btn-color: var(--white);
+    --Btn-bg-stronger: var(--gray-600);
+    --Btn-padding: var(--control-padding);
+    --Btn-border-radius: var(--control-border-radius);
+
+    --MenuItem-bg: transparent;
+    --MenuItem-color: var(--white);
+    --MenuItem-bg-stronger: rgba(255,255,255,.5);
 }

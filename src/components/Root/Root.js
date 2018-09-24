@@ -2,11 +2,11 @@
 
 import React from "react";
 
-import "./polyfill";
 import "./Root.css";
 
 type Props = {
     children?: any,
+    className?: string,
     routes?: Array<any>
 };
 
@@ -76,9 +76,7 @@ class Root extends React.Component<Props, State> {
 
     render() {
         return (
-            <div className="Root">
-                {this.props.children}
-
+            <div className={"Root" + (this.props.className ? " " + this.props.className : "")}>
                 {this.props.routes && this.props.routes.map((route, key) =>
                     this.state.history.indexOf(route.props.routeName) > -1 &&
                     <div
@@ -86,6 +84,7 @@ class Root extends React.Component<Props, State> {
                         className={"Root-route" +
                             (this.state.route && this.state.route === route ? " active" : "")}
                     >
+                        {this.props.children}
                         {route}
                     </div>
                 )}

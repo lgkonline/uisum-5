@@ -4,8 +4,8 @@
 }
 
 .Btn {
-    --bg-normal: var(--btn-bg);
-    --bg-hover: var(--btn-bg-stronger);
+    --bg-normal: var(--Btn-bg);
+    --bg-hover: var(--Btn-bg-stronger);
     --bg-active: var(--secondary-stronger);
 
     --bg: var(--bg-normal);
@@ -14,9 +14,9 @@
     display: inline-block;
     text-decoration: none;
     background-color: var(--bg);
-    color: var(--btn-color);
-    padding: var(--btn-padding);
-    border-radius: var(--btn-border-radius);
+    color: var(--Btn-color);
+    padding: var(--Btn-padding);
+    border-radius: var(--Btn-border-radius);
     transition: background-color .2s;
 }
 .Btn:hover {
