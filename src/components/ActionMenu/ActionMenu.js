@@ -40,6 +40,11 @@ class ActionMenu extends React.Component<Props, State> {
                         (this.state.toggleable ? " toggleable" : "") +
                         (this.props.right ? " right" : "")
                     }
+                    onClick={() => {
+                        if (this.state.in) {
+                            this.setState({ in: false });
+                        }
+                    }}
                 >
                     <MenuItem
                         className="ActionMenu-toggle"

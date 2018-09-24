@@ -4,8 +4,6 @@ import React from "react";
 
 const data = require("./Documentation.json");
 
-console.log(data);
-
 type Props = {};
 
 class Documentation extends React.Component<Props> {

@@ -21,7 +21,7 @@ class HomePage extends React.Component<Props> {
      * the following method:
      */
     componentDidRoute(): void {
-        console.log("YAY!");
+        console.log("Routed to HomePage! This event was fired with componentDidRoute()");
     }
 
     render() {
