@@ -30,6 +30,9 @@ class Customizer extends React.Component<Props, State> {
         let root = document.documentElement;
 
         if (root) {
+            // Reset first
+            root.setAttribute("style", "");
+
             Object.keys(this.state.customProperties).forEach(propName => {
                 root.style.setProperty(propName, this.state.customProperties[propName]);
             });
@@ -75,13 +78,7 @@ class Customizer extends React.Component<Props, State> {
             <div>
                 <Btn
                     onClick={() => {
-                        let root = document.documentElement;
-
-                        if (root) {
-                            root.setAttribute("style", "");
-                        }
-
-                        this.setCustomProperties({});
+                        this.setCustomProperties({}, true);
                     }}
                 >
                     {"Reset"}

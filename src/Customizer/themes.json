@@ -15,5 +15,14 @@
             "--Btn-bg-stronger": "var(--gray-400)",
             "--theme": "#ff0036"
         }
+    },
+    {
+        "themeName": "Rose Quartz",
+        "properties": {
+            "--font-family-sans-serif": "\"HK Grotesk\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+            "--theme": "#d6aaa9",
+            "--headings-font-weight": "500",
+            "--MenuItem-bg-active": "var(--gray-900)"
+        }
     }
 ]
