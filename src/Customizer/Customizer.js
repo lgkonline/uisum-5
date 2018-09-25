@@ -114,12 +114,15 @@ class Customizer extends React.Component<Props, State> {
                                     <input
                                         id={"Customizer-property" + prop.property}
                                         type="text"
-                                        value={this.state.customProperties[prop.property] || prop.value}
+                                        value={this.state.customProperties[prop.property] || ""}
                                         onChange={({ target }) => {
                                             this.setCustomProperty(prop.property, target.value);
                                         }}
                                         onDoubleClick={() => {
-                                            this.setCustomProperty(prop.property, prop.defaultValue);
+                                            // Only set default value on double-click, when field isn't already filled
+                                            if (!this.state.customProperties[prop.property]) {
+                                                this.setCustomProperty(prop.property, prop.defaultValue);
+                                            }
                                         }}
                                         title="Hint: double-click to take the default value"
                                         placeholder={prop.defaultValue}

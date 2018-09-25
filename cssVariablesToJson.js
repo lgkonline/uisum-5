@@ -33,8 +33,7 @@ lines.forEach(line => {
         if (match && match[1] && match[2]) {
             outputObjects[currentSectionIndex].properties.push({
                 property: "--" + match[1],
-                defaultValue: match[2].trim(),
-                value: ""
+                defaultValue: match[2].trim()
             });
         }
     }

@@ -1488,8 +1488,3 @@ html {
     align-self: baseline !important; }
   .align-self-xl-stretch {
     align-self: stretch !important; } }
-
-:root {
-  --control-padding-x: 1rem;
-  --control-padding-y: .7rem;
-  --font-size-base: 16px; }
