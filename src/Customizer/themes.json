@@ -1,0 +1,19 @@
+[
+    {
+        "themeName": "Dark",
+        "properties": {
+            "--font-family-sans-serif": "\"HK Grotesk\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+            "--primary-stronger": "#b2c2df",
+            "--secondary-stronger": "#e6cccc",
+            "--body-bg": "var(--gray-900)",
+            "--body-color": "var(--gray-100)",
+            "--control-border-color": "var(--gray-600)",
+            "--control-border-color-lighter": "var(--gray-700)",
+            "--control-border-color-stronger": "var(--gray-500)",
+            "--control-bg": "var(--gray-800)",
+            "--Btn-color": "var(--gray-900)",
+            "--Btn-bg-stronger": "var(--gray-400)",
+            "--theme": "#ff0036"
+        }
+    }
+]

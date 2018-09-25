@@ -1,0 +1,14 @@
+.Header {
+    position: relative;
+    z-index: 1;
+    padding: var(--Header-padding);
+    background-color: var(--theme);
+    color: var(--theme-color);
+    height: var(--Header-height);
+}
+
+.Header.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}

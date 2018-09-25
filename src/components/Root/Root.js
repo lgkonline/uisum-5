@@ -4,17 +4,18 @@ import React from "react";
 
 import "./Root.css";
 
-type Props = {
-    children?: any,
-    className?: string,
-    routes?: Array<any>
-};
-
 type State = {
     match?: ?Array<string>,
     route?: any,
     history: Array<string>,
     hash: string
+};
+
+type Props = {
+    children?: any,
+    className?: string,
+    onChangeRoute?: (state: State) => void,
+    routes?: Array<any>
 };
 
 /**
@@ -71,6 +72,10 @@ class Root extends React.Component<Props, State> {
             route: newRoute,
             history: this.state.history,
             hash: window.location.hash
+        }, () => {
+            if (this.props.onChangeRoute) {
+                this.props.onChangeRoute(this.state);
+            }
         });
     }
 
@@ -82,7 +87,7 @@ class Root extends React.Component<Props, State> {
                     <div
                         key={key}
                         className={"Root-route" +
-                            (this.state.route && this.state.route === route ? " active" : "")}
+                            (this.state.match && this.state.match[0] === route.props.routeName ? " active" : "")}
                     >
                         {this.props.children}
                         {route}

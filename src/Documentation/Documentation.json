@@ -32,6 +32,13 @@
         "required": false,
         "description": ""
       },
+      "className": {
+        "flowType": {
+          "name": "string"
+        },
+        "required": false,
+        "description": ""
+      },
       "onClick": {
         "flowType": {
           "name": "signature",
@@ -120,6 +127,38 @@
       }
     }
   },
+  "src\\components\\Header\\Header.js": {
+    "description": "",
+    "displayName": "Header",
+    "methods": [],
+    "props": {
+      "children": {
+        "flowType": {
+          "name": "any"
+        },
+        "required": false,
+        "description": ""
+      },
+      "className": {
+        "flowType": {
+          "name": "string"
+        },
+        "required": false,
+        "description": ""
+      },
+      "sticky": {
+        "flowType": {
+          "name": "boolean"
+        },
+        "required": false,
+        "description": "",
+        "defaultValue": {
+          "value": "false",
+          "computed": false
+        }
+      }
+    }
+  },
   "src\\components\\MenuItem\\MenuItem.js": {
     "description": "",
     "displayName": "MenuItem",
@@ -156,6 +195,20 @@
           "value": "\"javascript:void(0)\"",
           "computed": false
         }
+      },
+      "icon": {
+        "flowType": {
+          "name": "any"
+        },
+        "required": false,
+        "description": "Icon element. For e.g. `<span class=\"icon-twitter\" />`"
+      },
+      "label": {
+        "flowType": {
+          "name": "string"
+        },
+        "required": false,
+        "description": ""
       },
       "onClick": {
         "flowType": {
@@ -218,6 +271,75 @@
       "className": {
         "flowType": {
           "name": "string"
+        },
+        "required": false,
+        "description": ""
+      },
+      "onChangeRoute": {
+        "flowType": {
+          "name": "signature",
+          "type": "function",
+          "raw": "(state: State) => void",
+          "signature": {
+            "arguments": [
+              {
+                "name": "state",
+                "type": {
+                  "name": "signature",
+                  "type": "object",
+                  "raw": "{\r\n    match?: ?Array<string>,\r\n    route?: any,\r\n    history: Array<string>,\r\n    hash: string\r\n}",
+                  "signature": {
+                    "properties": [
+                      {
+                        "key": "match",
+                        "value": {
+                          "name": "Array",
+                          "elements": [
+                            {
+                              "name": "string"
+                            }
+                          ],
+                          "raw": "Array<string>",
+                          "nullable": true,
+                          "required": false
+                        }
+                      },
+                      {
+                        "key": "route",
+                        "value": {
+                          "name": "any",
+                          "required": false
+                        }
+                      },
+                      {
+                        "key": "history",
+                        "value": {
+                          "name": "Array",
+                          "elements": [
+                            {
+                              "name": "string"
+                            }
+                          ],
+                          "raw": "Array<string>",
+                          "required": true
+                        }
+                      },
+                      {
+                        "key": "hash",
+                        "value": {
+                          "name": "string",
+                          "required": true
+                        }
+                      }
+                    ]
+                  }
+                }
+              }
+            ],
+            "return": {
+              "name": "void"
+            }
+          }
         },
         "required": false,
         "description": ""

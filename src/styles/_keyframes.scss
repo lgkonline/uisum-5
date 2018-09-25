@@ -1,0 +1,9 @@
+@keyframes appear {
+    from {
+        transform: scale(0.98);
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

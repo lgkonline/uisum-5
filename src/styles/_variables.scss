@@ -1,11 +1,15 @@
 :root {
+    // Spacing
     --spacer: 1rem;
+    --touchy-size: 48px;
 
+    // Font
     --font-size-base: 1rem;
     --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
     --font-family-base: var(--font-family-sans-serif);
 
+    // Colors
     --white: white;
 
     --gray-100: #f8f9fa;
@@ -18,14 +22,19 @@
     --gray-800: #343a40;
     --gray-900: #212529;
 
+    --theme: #ff3624;
+    --theme-color: var(--white);
+
     --primary: #8ea6d0;
     --primary-stronger: #6a8ac1;
     --secondary: #d6aaa9;
     --secondary-stronger: #c68886;
 
+    // Body
     --body-bg: var(--white);
     --body-color: var(--gray-900);
 
+    // Controls
     --control-padding-x: .7rem;
     --control-padding-y: .5rem;
     --control-padding: var(--control-padding-y) var(--control-padding-x);
@@ -35,13 +44,16 @@
     --control-border-radius: 3px;
     --control-bg: var(--body-bg);
     --control-color: var(--body-color);
+    --control-transition-delay: .2s;
 
+    // Hyperlinks
     --link-color: var(--primary);
     --link-hover: var(--primary-stronger);
     --link-active: var(--secondary-stronger);
     --link-visited: var(--secondary);
     --link-visited-hover: var(--secondary-stronger);
 
+    // Code
     --code-color: #f06;
 
     --kbd-bg: var(--gray-600);
@@ -50,22 +62,31 @@
     --kbd-padding-y: .2em;
     --kbd-font-size: calc(1em - var(--kbd-padding-y));
 
+    // Headings
     --headings-margin-bottom: calc(var(--spacer) * .5);
     --headings-font-family: inherit;
     --headings-font-weight: 300;
     --headings-line-height: 1.2;
     --headings-color: inherit;
 
+    // ActionMenu
     --ActionMenu-bg: transparent;
     --ActionMenu-bg-in: var(--gray-900);
 
+    // Btn
     --Btn-bg: var(--gray-500);
     --Btn-color: var(--white);
     --Btn-bg-stronger: var(--gray-600);
     --Btn-padding: var(--control-padding);
     --Btn-border-radius: var(--control-border-radius);
 
+    // Header
+    --Header-height: var(--touchy-size);
+    --Header-padding: 0 var(--spacer);
+
+    // MenuItem
     --MenuItem-bg: transparent;
     --MenuItem-color: var(--white);
     --MenuItem-bg-stronger: rgba(255,255,255,.5);
+    --MenuItem-bg-active: rgba(255,255,255,.1);
 }

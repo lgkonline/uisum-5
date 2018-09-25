@@ -6,6 +6,7 @@
     color: var(--MenuItem-color);
     padding: var(--control-padding);
     border-radius: var(--control-border-radius);
+    transition: background-color var(--control-transition-delay);
 }
 
 .MenuItem:hover,
@@ -18,6 +19,10 @@
     background-color: var(--MenuItem-bg-stronger);
 }
 
+.MenuItem:active {
+    background-color: var(--MenuItem-bg);
+}
+
 .MenuItem.active {
-    background-color: var(--MenuItem-bg-stronger);
+    background-color: var(--MenuItem-bg-active);
 }

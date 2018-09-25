@@ -6,6 +6,7 @@ import "./Btn.css";
 
 type Props = {
     children?: any,
+    className?: string,
 
     /**
      * Fires when user clicks button.
@@ -25,7 +26,11 @@ class Btn extends React.Component<Props> {
     render() {
         return (
             <button
-                className={"Btn" + (this.props.primary ? " primary" : "")}
+                className={
+                    "Btn" +
+                    (this.props.primary ? " primary" : "") +
+                    (this.props.className ? " " + this.props.className : "")
+                }
                 onClick={this.props.onClick && this.props.onClick}
             >
                 {this.props.children}
