@@ -230,7 +230,39 @@
   "src\\components\\Page\\Page.js": {
     "description": "",
     "displayName": "Page",
-    "methods": [],
+    "methods": [
+      {
+        "name": "getProps",
+        "docblock": null,
+        "modifiers": [],
+        "params": [],
+        "returns": {
+          "type": {
+            "name": "signature",
+            "type": "object",
+            "raw": "{\r\n    children?: any,\r\n    routeName: string\r\n}",
+            "signature": {
+              "properties": [
+                {
+                  "key": "children",
+                  "value": {
+                    "name": "any",
+                    "required": false
+                  }
+                },
+                {
+                  "key": "routeName",
+                  "value": {
+                    "name": "string",
+                    "required": true
+                  }
+                }
+              ]
+            }
+          }
+        }
+      }
+    ],
     "props": {
       "children": {
         "flowType": {
@@ -248,9 +280,9 @@
       }
     }
   },
-  "src\\components\\Root\\Root.js": {
+  "src\\components\\Router\\Router.js": {
     "description": "This component is the backbone of your application.",
-    "displayName": "Root",
+    "displayName": "Router",
     "methods": [
       {
         "name": "initMatch",
@@ -369,6 +401,59 @@
           "name": "any"
         },
         "required": false,
+        "description": ""
+      }
+    }
+  },
+  "src\\components\\Sidebar\\Sidebar.js": {
+    "description": "",
+    "displayName": "Sidebar",
+    "methods": [],
+    "props": {
+      "children": {
+        "flowType": {
+          "name": "any"
+        },
+        "required": false,
+        "description": ""
+      },
+      "in": {
+        "flowType": {
+          "name": "boolean"
+        },
+        "required": false,
+        "description": "",
+        "defaultValue": {
+          "value": "false",
+          "computed": false
+        }
+      }
+    }
+  },
+  "src\\components\\SidebarController\\SidebarController.js": {
+    "description": "",
+    "displayName": "SidebarController",
+    "methods": [],
+    "props": {
+      "children": {
+        "flowType": {
+          "name": "any"
+        },
+        "required": false,
+        "description": ""
+      },
+      "className": {
+        "flowType": {
+          "name": "string"
+        },
+        "required": false,
+        "description": ""
+      },
+      "in": {
+        "flowType": {
+          "name": "boolean"
+        },
+        "required": true,
         "description": ""
       }
     }

@@ -61,7 +61,9 @@
   --MenuItem-bg: transparent;
   --MenuItem-color: var(--white);
   --MenuItem-bg-stronger: rgba(255,255,255,.5);
-  --MenuItem-bg-active: rgba(255,255,255,.1); }
+  --MenuItem-bg-active: rgba(255,255,255,.1);
+  --Sidebar-width: 265px;
+  --Sidebar-MenuItem-border-radius: 0; }
 
 @keyframes appear {
   from {

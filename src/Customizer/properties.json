@@ -310,5 +310,18 @@
                 "defaultValue": "rgba(255,255,255,.1)"
             }
         ]
+    },
+    {
+        "sectionTitle": "Sidebar",
+        "properties": [
+            {
+                "property": "--Sidebar-width",
+                "defaultValue": "265px"
+            },
+            {
+                "property": "--Sidebar-MenuItem-border-radius",
+                "defaultValue": "0"
+            }
+        ]
     }
 ]

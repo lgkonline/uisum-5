@@ -24,7 +24,7 @@
     display: inherit;
 }
 
-@media screen and (min-width: 768px) {
+/* @media screen and (min-width: 768px) {
     .ActionMenu:not(.in) {
         display: flex;
         position: absolute;
@@ -37,7 +37,7 @@
     .ActionMenu:not(.toggleable) .MenuItem:not(.ActionMenu-toggle) {
         display: inherit;
     }
-}
+} */
 
 .ActionMenu-wrapper.in {
     position: fixed;

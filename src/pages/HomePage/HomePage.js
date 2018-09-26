@@ -32,6 +32,23 @@ class HomePage extends React.Component<Props, State> {
                 <Container>
                     <Introduction />
 
+                    <article>
+                        <h2>Latest thoughts</h2>
+
+                        <ul>
+                            <li>
+                                I've created <code>SidebarController</code>, which controls <code>in</code> state&nbsp;
+                                from the <code>Sidebar</code>. <code>SidebarController</code> is wrapped around <code>Router</code>.&nbsp;
+                                <code>SidebarController</code> changes the CSS variable <code>--Sidebar-width</code>, which is used by&nbsp;
+                                <code>Router</code> for <code>padding-left</code> and by <code>Sidebar</code> for <code>width</code>.&nbsp;
+                            </li>
+                            <li>
+                                For the next step I should also create something like a controller for media query which can e.g.&nbsp;
+                                used by <code>ActionMenu</code>.
+                            </li>
+                        </ul>
+                    </article>
+
                     <a href="#/second">Second page!</a>
 
                     <p>

@@ -1,3 +1,7 @@
-.Root-route.active .Page {
+.Page.in {
+    padding-left: var(--Sidebar-width);
+}
+
+.Router-route.active .Page {
     animation: appear .5s;
 }

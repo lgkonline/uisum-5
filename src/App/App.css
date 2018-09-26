@@ -1,6 +1,10 @@
-.App-header {
-    --Header-height: 125px;
+:root {
+    --Header-height: calc(var(--touchy-size) * 3);
     --Header-padding: var(--spacer);
+}
+
+.App {
+    height: 100%;
 }
 
 .App-title {

@@ -1,0 +1,25 @@
+.Sidebar {
+    background-color: var(--theme);
+    width: var(--Sidebar-width);
+    overflow: hidden;
+
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.Sidebar .MenuItem {
+    height: var(--touchy-size);
+    display: flex;
+    align-items: center;
+    border-radius: var(--Sidebar-MenuItem-border-radius);
+}
+
+.SidebarController:not(.in) .Sidebar .MenuItem {
+    justify-content: center;
+}
+
+.SidebarController:not(.in) .Sidebar .MenuItem-label {
+    display: none;
+}

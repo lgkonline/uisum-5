@@ -2,7 +2,7 @@
 
 import React from "react";
 
-import "./Root.css";
+import "./Router.css";
 
 type State = {
     match?: ?Array<string>,
@@ -21,7 +21,7 @@ type Props = {
 /**
  * This component is the backbone of your application.
  */
-class Root extends React.Component<Props, State> {
+class Router extends React.Component<Props, State> {
     defaultMatch = ["home"];
 
     state = {
@@ -32,7 +32,7 @@ class Root extends React.Component<Props, State> {
     };
 
     componentWillMount() {
-        // window.RootRef = this;
+        // window.RouterRef = this;
 
         this.initMatch();
 
@@ -81,12 +81,17 @@ class Root extends React.Component<Props, State> {
 
     render() {
         return (
-            <div className={"Root" + (this.props.className ? " " + this.props.className : "")}>
+            <div
+                className={
+                    "Router" +
+                    (this.props.className ? " " + this.props.className : "")
+                }
+            >
                 {this.props.routes && this.props.routes.map((route, key) =>
                     this.state.history.indexOf(route.props.routeName) > -1 &&
                     <div
                         key={key}
-                        className={"Root-route" +
+                        className={"Router-route" +
                             (this.state.match && this.state.match[0] === route.props.routeName ? " active" : "")}
                     >
                         {this.props.children}
@@ -98,4 +103,4 @@ class Root extends React.Component<Props, State> {
     }
 }
 
-export default Root;
+export default Router;

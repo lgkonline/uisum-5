@@ -1,15 +1,19 @@
-.Root {
+.Router {
     position: relative;
     height: 100%;
 }
 
-.Root-route {
+.SidebarController .Router {
+    padding-left: var(--Sidebar-width);
+}
+
+.Router-route {
     -webkit-overflow-scrolling: touch;
     overflow-x: hidden;
     overflow-y: auto;
     height: 100%;
 }
 
-.Root-route:not(.active) {
+.Router-route:not(.active) {
     display: none;
 }

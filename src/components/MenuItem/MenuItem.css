@@ -12,7 +12,7 @@
 .MenuItem:hover,
 .MenuItem:visited,
 .MenuItem:visited:hover {
-    color: inherit;
+    color: var(--MenuItem-color);
 }
 
 .MenuItem:hover {

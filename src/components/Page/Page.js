@@ -10,9 +10,15 @@ type Props = {
 };
 
 class Page extends React.Component<Props> {
+    getProps(): Props {
+        return this.props;
+    }
+
     render() {
         return (
-            <div className="Page">
+            <div
+                className={"Page"}
+            >
                 {this.props.children}
             </div>
         );
