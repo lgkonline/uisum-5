@@ -49,15 +49,14 @@ class HomePage extends React.Component<Props, State> {
                         </ul>
                     </article>
 
-                    <a href="#/second">Second page!</a>
-
                     <p>
                         Just press <kbd>ctrl + ;</kbd>
                     </p>
 
                     <div style={{ marginBottom: "1rem" }}>
                         <input type="text" placeholder="And now type something" />
-                        {" "}<Btn>And now click</Btn>
+                        {" "}
+                        <Btn primary>And now click</Btn>
                     </div>
                 </Container>
             </Page>
