@@ -23,6 +23,14 @@
     background-color: var(--MenuItem-bg);
 }
 
+.MenuItem:focus {
+    outline: 0;
+}
+
+.MenuItem:not(.active):focus {
+    box-shadow: var(--control-focus-box-shadow);
+}
+
 .MenuItem.active {
     background-color: var(--MenuItem-bg-active);
 }

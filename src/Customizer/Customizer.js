@@ -110,6 +110,7 @@ class Customizer extends React.Component<Props, State> {
                                 <Col size={8}>
                                     <input
                                         id={"Customizer-property" + prop.property}
+                                        className="mb-1-4"
                                         type="text"
                                         value={this.state.customProperties[prop.property] || ""}
                                         onChange={({ target }) => {
@@ -129,30 +130,6 @@ class Customizer extends React.Component<Props, State> {
                         )}
                     </section>
                 )}
-
-                {/*this.state.customProperties.length > 0 && this.state.customProperties.map((prop, key) =>
-                    <Row key={key}>
-                        <Col size={4}>
-                            {prop.property}
-                        </Col>
-                        <Col size={8}>
-                            <input
-                                type="text"
-                                value={prop.value}
-                                onChange={({ target }) => {
-                                    prop.value = target.value;
-                                    const copy = JSON.parse(JSON.stringify(this.state.customProperties));
-                                    this.setState({ customProperties: copy });
-
-                                    let root = document.documentElement;
-                                    if (root) {
-                                        root.style.setProperty(prop.property, target.value);
-                                    }
-                                }}
-                            />
-                        </Col>
-                    </Row>
-                            )*/}
             </div>
         );
     }

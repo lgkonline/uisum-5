@@ -85,8 +85,12 @@
                 "defaultValue": "var(--white)"
             },
             {
+                "property": "--primary-rgb",
+                "defaultValue": "142, 166, 208"
+            },
+            {
                 "property": "--primary",
-                "defaultValue": "#8ea6d0"
+                "defaultValue": "rgb(var(--primary-rgb))"
             },
             {
                 "property": "--primary-stronger",
@@ -157,6 +161,10 @@
             {
                 "property": "--control-transition-delay",
                 "defaultValue": ".2s"
+            },
+            {
+                "property": "--control-focus-box-shadow",
+                "defaultValue": "0 0 0 .2rem rgba(var(--primary-rgb), .5)"
             }
         ]
     },
@@ -315,8 +323,12 @@
         "sectionTitle": "Sidebar",
         "properties": [
             {
-                "property": "--Sidebar-width",
+                "property": "--Sidebar-width-base",
                 "defaultValue": "265px"
+            },
+            {
+                "property": "--Sidebar-width",
+                "defaultValue": "var(--Sidebar-width-base)"
             },
             {
                 "property": "--Sidebar-MenuItem-border-radius",

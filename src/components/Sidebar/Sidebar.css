@@ -1,6 +1,7 @@
 .Sidebar {
     background-color: var(--theme);
     width: var(--Sidebar-width);
+    transition: width .2s;
     overflow: hidden;
 
     position: absolute;
@@ -16,10 +17,6 @@
     border-radius: var(--Sidebar-MenuItem-border-radius);
 }
 
-.SidebarController:not(.in) .Sidebar .MenuItem {
-    justify-content: center;
-}
-
-.SidebarController:not(.in) .Sidebar .MenuItem-label {
-    display: none;
+.Sidebar .MenuItem:not(.active):focus {
+    box-shadow: var(--control-focus-box-shadow) inset;
 }

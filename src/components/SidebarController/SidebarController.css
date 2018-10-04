@@ -1,3 +1,45 @@
 .SidebarController:not(.in) {
     --Sidebar-width: var(--touchy-size);
 }
+
+.SidebarController:not(.in) .Sidebar .MenuItem {
+    animation: hzfh3rwet .4s linear forwards;
+}
+@keyframes hzfh3rwet {
+    to {
+        justify-content: center;
+    }
+}
+
+.SidebarController:not(.in) .Sidebar .MenuItem-label {
+    display: none;
+}
+
+@media screen and (max-width: 992px) {
+    .SidebarController.in {
+        --Sidebar-width: var(--touchy-size);
+    }
+
+    .SidebarController.in .Sidebar {
+        width: var(--Sidebar-width-base);
+        z-index: 1;
+        box-shadow: .6rem 6rem 6rem rgba(0,0,0,.5);
+    }
+
+    .SidebarController-wrapper {
+        position: fixed;
+        z-index: 1;
+        top: 0; right: 0; bottom: 0; left: 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .SidebarController:not(.in) {
+        --Sidebar-width: 0;
+    }
+
+    .SidebarController:not(.in) .Sidebar-toggle {
+        position: fixed;
+        width: var(--touchy-size);
+    }
+}

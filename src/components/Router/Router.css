@@ -5,6 +5,7 @@
 
 .SidebarController .Router {
     padding-left: var(--Sidebar-width);
+    transition: padding-left .2s;
 }
 
 .Router-route {

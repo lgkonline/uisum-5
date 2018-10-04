@@ -8,6 +8,7 @@ import MenuItem from "../components/MenuItem/MenuItem";
 import Header from "../components/Header/Header";
 import Sidebar from "../components/Sidebar/Sidebar";
 import SidebarController from "../components/SidebarController/SidebarController";
+import NavMenu from "../components/NavMenu/NavMenu";
 
 import HomePage from "../pages/HomePage/HomePage";
 import CustomizerPage from "../pages/CustomizerPage/CustomizerPage";
@@ -30,7 +31,11 @@ class App extends Component<Props, State> {
 
     render() {
         return (
-            <SidebarController className="App" in={this.state.sidebarIn}>
+            <SidebarController
+                className="App"
+                in={this.state.sidebarIn}
+                onClose={() => this.setState({ sidebarIn: false })}
+            >
                 <Router
                     routes={[
                         <HomePage routeName="home" />,
@@ -44,18 +49,17 @@ class App extends Component<Props, State> {
                     }}
                 >
                     <Header className="App-header">
-                        <ActionMenu>
-                            <MenuItem href="#/home" active={this.state.activeMatchItem === "home"}>Home</MenuItem>
-                            <MenuItem href="#/customizer" active={this.state.activeMatchItem === "customizer"}>Customizer</MenuItem>
-                            <MenuItem href="#/documentation" active={this.state.activeMatchItem === "documentation"}>Documentation</MenuItem>
-                        </ActionMenu>
-
-                        <div style={{ position: "absolute", right: "var(--spacer)" }}>
+                        <ActionMenu right>
                             <MenuItem
                                 href="https://github.com/lgkonline/uisum-5"
                                 icon={<span className="icon-github" />}
+                                label="GitHub"
                             />
-                        </div>
+                            <MenuItem
+                                href="https://uisum.lgk.io"
+                                label="Current stable version"
+                            />
+                        </ActionMenu>
 
                         <div className="App-title">
                             <div>Uisum 5</div>
@@ -65,28 +69,44 @@ class App extends Component<Props, State> {
                 </Router>
 
                 <Sidebar>
-                    <MenuItem
-                        onClick={() => this.setState({ sidebarIn: !this.state.sidebarIn })}
-                        icon={<span className="icon-menu" />}
+                    <NavMenu
+                        activeMatchItem={this.state.activeMatchItem}
+                        onClickMenuItem={() => {
+                            const windowWidth = window.innerWidth || document.documentElement.clientWidth;
+
+                            if (windowWidth < 992) {
+                                this.setState({ sidebarIn: false })
+                            }
+                        }}
+                        menuItems={[
+                            <MenuItem
+                                key={0}
+                                className="Sidebar-toggle"
+                                onClick={() => this.setState({ sidebarIn: !this.state.sidebarIn })}
+                                icon={<span className="icon-menu" />}
+                                label="Uisum 5"
+                            />,
+                            <MenuItem
+                                key={1}
+                                href="#/home"
+                                icon={<span className="icon-home" />}
+                                label="Home"
+                            />,
+                            <MenuItem
+                                key={2}
+                                href="#/customizer"
+                                icon={<span className="icon-droplet" />}
+                                label="Customizer"
+                            />,
+                            <MenuItem
+                                key={3}
+                                href="#/documentation"
+                                icon={<span className="icon-book" />}
+                                label="Documentation"
+                            />
+                        ]}
                     />
-                    <MenuItem
-                        href="#/home"
-                        active={this.state.activeMatchItem === "home"}
-                        icon={<span className="icon-home" />}
-                        label="Home"
-                    />
-                    <MenuItem
-                        href="#/customizer"
-                        active={this.state.activeMatchItem === "customizer"}
-                        icon={<span className="icon-droplet" />}
-                        label="Customizer"
-                    />
-                    <MenuItem
-                        href="#/documentation"
-                        active={this.state.activeMatchItem === "documentation"}
-                        icon={<span className="icon-book" />}
-                        label="Documentation"
-                    />
+
                 </Sidebar>
             </SidebarController>
         );

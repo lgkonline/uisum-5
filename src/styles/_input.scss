@@ -1,4 +1,4 @@
-input {
+input, textarea {
     padding: var(--control-padding);
     background-color: var(--control-bg);
     color: var(--control-color);
@@ -7,5 +7,10 @@ input {
 
     &:hover, &:focus {
         border-color: var(--control-border-color-stronger);
+    }
+
+    &:focus {
+        outline: 0;
+        box-shadow: var(--control-focus-box-shadow);
     }
 }

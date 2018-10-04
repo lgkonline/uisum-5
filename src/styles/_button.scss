@@ -4,4 +4,9 @@ button {
     padding: var(--control-padding);
     background-color: var(--control-border-color);
     color: var(--control-color);
+
+    &:focus {
+        outline: 0;
+        box-shadow: var(--control-focus-box-shadow);
+    }
 }

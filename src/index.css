@@ -17,7 +17,8 @@
   --gray-900: #212529;
   --theme: #ff3624;
   --theme-color: var(--white);
-  --primary: #8ea6d0;
+  --primary-rgb: 142, 166, 208;
+  --primary: rgb(var(--primary-rgb));
   --primary-stronger: #6a8ac1;
   --secondary: #d6aaa9;
   --secondary-stronger: #c68886;
@@ -33,6 +34,7 @@
   --control-bg: var(--body-bg);
   --control-color: var(--body-color);
   --control-transition-delay: .2s;
+  --control-focus-box-shadow: 0 0 0 .2rem rgba(var(--primary-rgb), .5);
   --link-color: var(--primary);
   --link-hover: var(--primary-stronger);
   --link-active: var(--secondary-stronger);
@@ -62,7 +64,8 @@
   --MenuItem-color: var(--white);
   --MenuItem-bg-stronger: rgba(255,255,255,.5);
   --MenuItem-bg-active: rgba(255,255,255,.1);
-  --Sidebar-width: 265px;
+  --Sidebar-width-base: 265px;
+  --Sidebar-width: var(--Sidebar-width-base);
   --Sidebar-MenuItem-border-radius: 0; }
 
 @keyframes appear {
@@ -348,14 +351,17 @@ kbd {
   padding: var(--kbd-padding-y) var(--kbd-padding-x);
   font-size: var(--kbd-font-size); }
 
-input {
+input, textarea {
   padding: var(--control-padding);
   background-color: var(--control-bg);
   color: var(--control-color);
   border: 1px solid var(--control-border-color);
   border-radius: var(--control-border-radius); }
-  input:hover, input:focus {
+  input:hover, input:focus, textarea:hover, textarea:focus {
     border-color: var(--control-border-color-stronger); }
+  input:focus, textarea:focus {
+    outline: 0;
+    box-shadow: var(--control-focus-box-shadow); }
 
 button {
   border: 1px solid var(--control-border-color);
@@ -363,6 +369,9 @@ button {
   padding: var(--control-padding);
   background-color: var(--control-border-color);
   color: var(--control-color); }
+  button:focus {
+    outline: 0;
+    box-shadow: var(--control-focus-box-shadow); }
 
 h1,
 h2,

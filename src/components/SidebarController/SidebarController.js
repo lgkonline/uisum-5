@@ -7,18 +7,11 @@ import "./SidebarController.css";
 type Props = {
     children?: any,
     className?: string,
-    in: boolean
+    in: boolean,
+    onClose: ?() => void
 };
 
-type State = {
-    in: boolean
-};
-
-class SidebarController extends React.Component<Props, State> {
-    state = {
-        in: false
-    };
-
+class SidebarController extends React.Component<Props> {
     render() {
         return (
             <div
@@ -28,6 +21,17 @@ class SidebarController extends React.Component<Props, State> {
                     (this.props.in ? " in" : "")
                 }
             >
+                {this.props.in &&
+                    <div
+                        className="SidebarController-wrapper"
+                        onClick={() => {
+                            if (this.props.onClose) {
+                                this.props.onClose();
+                            }
+                        }}
+                    />
+                }
+
                 {this.props.children}
             </div>
         );

@@ -14,6 +14,7 @@
 
 .ActionMenu.in {
     background-color:  var(--ActionMenu-bg-in);
+    box-shadow: .3rem 3rem 3rem rgba(0,0,0,.25);
 }
 
 .ActionMenu:not(.in) .MenuItem {
@@ -24,22 +25,21 @@
     display: inherit;
 }
 
-/* @media screen and (min-width: 768px) {
-    .ActionMenu:not(.in) {
+.ActionMenu-wrapper.in {
+    position: fixed;
+    top: 0; right: 0; bottom: 0; left: 0;
+}
+
+@media screen and (min-width: 992px) {
+    .ActionMenu {
         display: flex;
-        position: absolute;
     }
 
     .ActionMenu:not(.in) .MenuItem.ActionMenu-toggle {
         display: none;
     }
-    
-    .ActionMenu:not(.toggleable) .MenuItem:not(.ActionMenu-toggle) {
+
+    .ActionMenu:not(.in) .MenuItem {
         display: inherit;
     }
-} */
-
-.ActionMenu-wrapper.in {
-    position: fixed;
-    top: 0; right: 0; bottom: 0; left: 0;
 }

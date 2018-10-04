@@ -25,7 +25,8 @@
     --theme: #ff3624;
     --theme-color: var(--white);
 
-    --primary: #8ea6d0;
+    --primary-rgb: 142, 166, 208;
+    --primary: rgb(var(--primary-rgb));
     --primary-stronger: #6a8ac1;
     --secondary: #d6aaa9;
     --secondary-stronger: #c68886;
@@ -45,6 +46,7 @@
     --control-bg: var(--body-bg);
     --control-color: var(--body-color);
     --control-transition-delay: .2s;
+    --control-focus-box-shadow: 0 0 0 .2rem rgba(var(--primary-rgb), .5);
 
     // Hyperlinks
     --link-color: var(--primary);
@@ -91,6 +93,7 @@
     --MenuItem-bg-active: rgba(255,255,255,.1);
 
     // Sidebar
-    --Sidebar-width: 265px;
+    --Sidebar-width-base: 265px;
+    --Sidebar-width: var(--Sidebar-width-base);
     --Sidebar-MenuItem-border-radius: 0;
 }

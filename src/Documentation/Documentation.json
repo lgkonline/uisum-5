@@ -227,6 +227,53 @@
       }
     }
   },
+  "src\\components\\NavMenu\\NavMenu.js": {
+    "description": "",
+    "displayName": "NavMenu",
+    "methods": [],
+    "props": {
+      "activeMatchItem": {
+        "flowType": {
+          "name": "any"
+        },
+        "required": true,
+        "description": ""
+      },
+      "menuItems": {
+        "flowType": {
+          "name": "Array",
+          "elements": [
+            {
+              "name": "any"
+            }
+          ],
+          "raw": "Array<any>"
+        },
+        "required": true,
+        "description": ""
+      },
+      "onClickMenuItem": {
+        "flowType": {
+          "name": "signature",
+          "type": "function",
+          "raw": "() => void",
+          "signature": {
+            "arguments": [],
+            "return": {
+              "name": "void"
+            }
+          },
+          "nullable": true
+        },
+        "required": false,
+        "description": "",
+        "defaultValue": {
+          "value": "() => { }",
+          "computed": false
+        }
+      }
+    }
+  },
   "src\\components\\Page\\Page.js": {
     "description": "",
     "displayName": "Page",
@@ -452,6 +499,22 @@
       "in": {
         "flowType": {
           "name": "boolean"
+        },
+        "required": true,
+        "description": ""
+      },
+      "onClose": {
+        "flowType": {
+          "name": "signature",
+          "type": "function",
+          "raw": "() => void",
+          "signature": {
+            "arguments": [],
+            "return": {
+              "name": "void"
+            }
+          },
+          "nullable": true
         },
         "required": true,
         "description": ""
